@@ -8,7 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BenchmarksBasicsTests\**" />
+    <Compile Remove="BenchmarksBasicsUtils\**" />
+    <EmbeddedResource Remove="BenchmarksBasicsTests\**" />
+    <EmbeddedResource Remove="BenchmarksBasicsUtils\**" />
+    <None Remove="BenchmarksBasicsTests\**" />
+    <None Remove="BenchmarksBasicsUtils\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="BenchmarksBasicsUtils\BenchmarksBasicsUtils.csproj" />
   </ItemGroup>
 
 </Project>

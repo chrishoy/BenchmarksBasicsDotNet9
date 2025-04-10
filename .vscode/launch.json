@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (BenchmarkDotNet)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build:release",
+            "program": "${workspaceFolder}/bin/Release/net9.0/BenchmarksBasicsDotNet9.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 # Simple .Net 9 Benchmark Comparisons
 
 I was asked recently how to convert an integer representing a month to the quarter the month is in.
-Turns out the question was about performance, and my simple answer, use a simple `(month - 1) / 4 + 1`,
+Turns out the question was about performance, and my simple answer, use a simple `(month - 1) / 3 + 1`,
 which uses integer division and therefore should be very fast anyway, was not quite what was being looked for.
 
 When pressed further I mentioned you could use a switch expression, but what they were looking for was
